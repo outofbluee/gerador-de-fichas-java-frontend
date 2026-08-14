@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080";
+const API_URL = "https://gerador-de-fichas-java-backend.onrender.com/";
 
 const formulario = document.getElementById("fichaForm");
 
