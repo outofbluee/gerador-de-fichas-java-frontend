@@ -1,3 +1,5 @@
+const API_URL = "http://localhost:8080";
+
 const formulario = document.getElementById("fichaForm");
 
 const nomeDoPaciente = document.getElementById("nomeDoPaciente");
@@ -5,6 +7,7 @@ const dataDaConsulta = document.getElementById("dataDaConsulta");
 const horarioDaConsulta = document.getElementById("horarioDaConsulta");
 const nomeDoMedico = document.getElementById("nomeDoMedico");
 const nomeDoAgenteDeSaude = document.getElementById("nomeDoAgenteDeSaude");
+
 const fichaGerada = document.getElementById("fichaGerada");
 const baixarFichaBtn = document.getElementById("baixarFicha");
 
@@ -37,7 +40,7 @@ function gerar() {
         nomeDoAgenteDeSaude: nomeDoAgenteDeSaude.value
     };
 
-    fetch("http://localhost:8080/api/v1/fichas", 
+    fetch(`${API_URL}/api/v1/fichas`, 
     {
         method: "POST",
         headers: {
