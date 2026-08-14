@@ -5,6 +5,11 @@ const dataDaConsulta = document.getElementById("dataDaConsulta");
 const horarioDaConsulta = document.getElementById("horarioDaConsulta");
 const nomeDoMedico = document.getElementById("nomeDoMedico");
 const nomeDoAgenteDeSaude = document.getElementById("nomeDoAgenteDeSaude");
+const fichaGerada = document.getElementById("fichaGerada");
+const baixarFichaBtn = document.getElementById("baixarFicha");
+
+let imagemUrl;
+
 
 formulario.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -12,9 +17,18 @@ formulario.addEventListener("submit", function(event) {
     gerar();
 });
 
-function gerar() {
-    // TODO: Criar objeto e fazer POST
+baixarFichaBtn.addEventListener("click", function() {
+    if (imagemUrl !== null) {
+        const link = document.createElement("a");
 
+        link.href = imagemUrl;
+        link.download = "ficha.png";
+
+        link.click();
+    };
+});
+
+function gerar() {
     const ficha = {
         nomeDoPaciente: nomeDoPaciente.value,
         dataDaConsulta: dataDaConsulta.value,
@@ -32,10 +46,11 @@ function gerar() {
         body: JSON.stringify(ficha)
     })
     .then(response => {
-        return response.json();
+        return response.blob();
     })
-    .then(data => {
-        console.log(data);
+    .then(blob => {
+        imagemUrl = URL.createObjectURL(blob);
+        fichaGerada.src = imagemUrl;
     })
     .catch(error => {
         console.error(error);
