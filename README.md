@@ -6,7 +6,7 @@ Este é um projeto criado para resolver um problema que minha mãe, uma agente c
 
 Você pode acessar o programa através do GitHub Pages:
 
-[https://outofbluee.github.io/gerador-de-fichas-java-frontend/]
+https://outofbluee.github.io/gerador-de-fichas-java-frontend/
 
 ## Como funciona
 
@@ -63,26 +63,6 @@ O backend funciona como uma API REST. Ele recebe os dados da consulta, gera a im
 - GitHub Pages — hospedagem do frontend
 - Render — hospedagem do backend
 - Docker — containerização da aplicação backend
-
-## Arquitetura
-
-De forma simplificada, o funcionamento do sistema é:
-
-Frontend (GitHub Pages)
-        ↓
-      HTTP
-        ↓
-Backend (Render)
-        ↓
-Spring Boot
-        ↓
-Geração da imagem
-        ↓
-      PNG
-        ↓
-Frontend
-        ↓
-Exibição / Download
 
 ## Status do projeto
 
