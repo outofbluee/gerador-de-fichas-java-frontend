@@ -22,6 +22,12 @@ Após preencher o formulário e clicar em **Gerar Ficha**, o sistema gera uma im
 
 A imagem pode então ser baixada através do botão **Baixar Ficha** e compartilhada com o paciente, por exemplo, através do WhatsApp.
 
+## Exemplo
+
+Abaixo está um exemplo de ficha gerada pelo sistema:
+
+![Exemplo de ficha gerada](./exemplo/ficha-exemplo.png)
+
 ## Motivação
 
 As fichas de agendamento eram inicialmente feitas em papel. Com o tempo, esse processo passou a ser realizado de forma digital, principalmente através de mensagens no WhatsApp.
