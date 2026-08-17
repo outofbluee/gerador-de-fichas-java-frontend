@@ -68,7 +68,7 @@ O backend funciona como uma API REST. Ele recebe os dados da consulta, gera a im
 
 O projeto possui uma versão **MVP (Minimum Viable Product)** funcional e está disponível para utilização.
 
-A próxima etapa planejada é explorar uma segunda implementação da geração das fichas utilizando HTML, CSS e JavaScript, reaproveitando o frontend desenvolvido nesta versão.
+A próxima etapa planejada é explorar uma segunda implementação da geração das fichas utilizando HTML, CSS e JavaScript, reaproveitando o frontend desenvolvido nesta versão. Mas isso fica para os próximos capítulos do projeto...
 
 ## Objetivo do projeto
 
