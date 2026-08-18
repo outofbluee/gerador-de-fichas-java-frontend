@@ -64,7 +64,7 @@ O frontend é responsável pelo formulário, comunicação com a API e exibiçã
 
 O backend funciona como uma API REST. Ele recebe os dados da consulta, gera a imagem da ficha e retorna o arquivo PNG para o frontend.
 
-(Perceba que esse repositório só possui o frontend, você pode encontrar o backend neste [repositório]([https://outofbluee.github.io/gerador-de-fichas-java-frontend/](https://github.com/outofbluee/gerador-de-fichas-java-backend)).)
+(Perceba que esse repositório só possui o frontend, você pode encontrar o backend neste [repositório](https://github.com/outofbluee/gerador-de-fichas-java-backend).)
 
 ### Infraestrutura
 
